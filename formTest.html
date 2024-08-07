@@ -15,8 +15,11 @@
 <body>
     <div class="container">
         <h4>Formulario de Registro</h4>
-        <form name="contacto" netlify action="plantilla/index.html">
-            <input type="hidden" name="form-name" value="registro">
+        <form name="contacto" data-netlify="true" netlify-honeypot="bot-field" action="/plantilla/index.html">
+            <input type="hidden" name="form-name" value="contacto">
+            <div style="display:none;">
+                <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+            </div>
 
             <div class="input-field">
                 <input type="text" id="nombre" name="nombre" required>
@@ -59,6 +62,7 @@
                     <option value="estadounidense">Estadounidense</option>
                     <option value="canadiense">Canadiense</option>
                 </select>
+                <label for="nacionalidad">Nacionalidad:</label>
             </div>
 
             <div class="input-field">
