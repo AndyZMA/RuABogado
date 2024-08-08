@@ -277,36 +277,38 @@
 					<div class="form-column col-lg-5 col-md-12 col-sm-12">
 						<div class="inner-column">
 							
-							<!--Contact Form-->
-							<div class="contact-form">
-								<form name="contact" netlify>
-									
-									<div class="form-group">
-										<input type="text" name="firstname" value="" placeholder="Full name" required>
-									</div>
-									
-									<div class="form-group">
-										<input type="text" name="email" value="" placeholder="Email" required>
-									</div>
-									
-									<div class="form-group">
-										<select class="custom-select-box">
-											<option>Select topic</option>
-											<option>Topic One</option>
-											<option>Topic Two</option>
-										</select>
-									</div>
-									
-									<div class="form-group">
-										<textarea name="message" placeholder="write.."></textarea>
-									</div>
-									
-									<div class="form-group">
-										<button type="submit" class="theme-btn btn-style-one">Submit</button>
-									</div>                                        
-									
-								</form>
-							</div>
+<!--Contact Form-->
+			<div class="contact-form">
+				<form name="ruAbogado" method="POST" data-netlify="true">
+					<!-- Netlify Forms Hidden Input -->
+					<input type="hidden" name="form-name" value="ruAbogado">
+
+					<div class="form-group">
+						<input type="text" name="firstname" value="" placeholder="Full name" required>
+					</div>
+
+					<div class="form-group">
+						<input type="email" name="email" value="" placeholder="Email" required>
+					</div>
+
+					<div class="form-group">
+						<select name="topic" class="custom-select-box" required>
+							<option value="">Select topic</option>
+							<option value="Topic One">Topic One</option>
+							<option value="Topic Two">Topic Two</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<textarea name="message" placeholder="write.." required></textarea>
+					</div>
+
+					<div class="form-group">
+						<button type="submit" class="theme-btn btn-style-one">Submit</button>
+					</div>
+				</form>
+			</div>
+
 							
 						</div>
 					</div>
