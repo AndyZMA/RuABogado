@@ -2,12 +2,13 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Dr. Pablo Abdias Pedroza</title>
+<title>Dr. Abdias Pedroza Pedroza</title>
 <link rel="icon" href="images/icons/V=G.png" type="image/x-icon">
 <!-- Stylesheets -->
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
+<link rel="stylesheet" href="css/iconos.css">
 <!--<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">-->
 <!--<link rel="icon" href="images/favicon.png" type="image/x-icon">-->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,11 +16,37 @@
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 
+<style>
+	/* Estilos generales para la bandera */
+.flag-icon {
+    display: flex;
+    align-items: center;
+    position: absolute; /* Ajuste de posición */
+    right: 149px; /* Ajusta la posición según lo necesites */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
 
+.flag-icon img {
+    width: 45px; /* Tamaño ajustado de la bandera */
+    height: auto;
+    margin-left: 10px; /* Espacio a la izquierda */
+    margin-right: 10px; /* Espacio a la derecha */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la bandera */
+    transition: transform 0.3s ease;
+}
+
+.flag-icon img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+</style>
 
 </head>
 
 <body>
+	
 
 <div class="page-wrapper">
  	   <!-- Preloader -->
@@ -27,6 +54,7 @@
  	
 		<!-- Main Header-->
 		<header class="main-header">
+			
 			
 			<!--Header-Upper-->
 			<div class="header-upper">
@@ -57,6 +85,9 @@
 												<li><a href="index-2.html">Home Page 02</a></li>
 											</ul> -->
 										</li>
+
+
+
 										<li class=""><a href="#about-me">Acerca de mi</a>
 											<!-- <ul>
 												<li><a href="about.html">About Us</a></li>
@@ -85,35 +116,21 @@
 										</li>
 										<li class="current"><a href="contact.html">Contactame</a></li>
 									</ul>
+								
 								</div>
 								
 							</nav>
 							
 							<div class="outer-box">
-								
-								<!--Search Box
-								<div class="search-box-outer">
-									<div class="dropdown">
-										<button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
-										<ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu1">
-											<li class="panel-outer">
-												<div class="form-container">
-													<form method="post" action="blog.html">
-														<div class="form-group">
-															<input type="search" name="field-name" value="" placeholder="Search Here" required>
-															<button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
-														</div>
-													</form>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>-->
-								
-								<!--Nav Toggler-->
 								<div class="nav-toggler"><div class="nav-btn hidden-bar-opener"><span class="flaticon-menu"></span></div></div>
 							</div>
 							
+							<a href="#" onclick="translatePageToEnglish();" class="flag-icon">
+								<img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="Translate to English" width="30px">
+							</a>
+							
+							
+
 						</div>
 					   
 					</div>
@@ -167,12 +184,12 @@
 											<li><a href="portfolio-single.html">Portfolio Single</a></li>
 										</ul> -->
 									</li>
-									<li class="dropdown"><a href="#">Blog</a>
-										<!-- <ul>
+									<!-- <li class="dropdown"><a href="#">Blog</a>
+										<ul>
 											<li><a href="blog-list.html">Blog List</a></li>
 											<li><a href="blog-single.html">Blog Single</a></li>
-										</ul> -->
-									</li>
+										</ul> 
+									</li> -->
 									<li class="current"><a href="contact.html">Contactame</a></li>
 								</ul>
 							</div>
@@ -215,11 +232,11 @@
 						</ul>
 					<div class="lower-box">
 						<!-- Social Icons -->
-						<ul class="social-icons">
-							<li class="facebook"><a href="#"><span class="fa fa-facebook"></span></a></li>
-							<li class="twitter"><a href="#"><span class="fa fa-twitter"></span></a></li>
-							<li class="pinterest"><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
-							<li class="vimeo"><a href="#"><span class="fa fa-vimeo"></span></a></li>
+						<ul class="follow-usG">
+							<li>Follow us: </li>
+							<li><a href="https://www.facebook.com/dr.abdiaspedroza"><img src="images/icons/fbIconG.svg" alt="Facebook"></a></li>
+							<li><a href="https://www.instagram.com/abdiaspedroza/"><img src="images/icons/igIconG.svg" alt="Instagram"></a></li>
+							<li><a href="https://www.tiktok.com/@abdiaspedroza"><img src="images/icons/ttIconG.svg" alt="Tiktok"></a></li>
 						</ul>
 						<!--<a href="#" class="theme-btn buy-btn">Buy LawSight today!</a>-->
 					</div>
@@ -230,6 +247,8 @@
 		</section>
 		<!-- End / Hidden Bar -->
 	
+
+
 	<!--Banner Section-->
     <section class="banner-section">
 		<div class="main-slider-carousel owl-carousel owl-theme">
@@ -237,9 +256,9 @@
 			<div class="slide" style="background-image:url(images/background/back.jpg)">
 				<div class="container">
 					<div class="content">
-						<div class="title">Dr. Pablo Abdiaz</div>
+						<div class="title">Dr. Abdias Pedroza</div>
 						<h1>Protege tus derechos y <br>garantiza una <br><span>defensa justa</span></h1>
-						<!-- <a href="#" class="theme-btn btn-style-one">Contact us today</a> -->
+						<a href="contact.html" class="theme-btn btn-style-one">Contactame</a>
 					</div>
 				</div>
 			</div>
@@ -247,9 +266,9 @@
 			<div class="slide" style="background-image:url(images/background/back.jpg)">
 				<div class="container">
 					<div class="content">
-						<div class="title">Dr. Pablo Abdiaz</div>
+						<div class="title">Dr. Abdias Pedroza</div>
 						<h1>Defensor particular<br> en  <span>materia penal</span></h1>
-						<a href="#" class="theme-btn btn-style-one">Contact us today</a>
+						<a href="contact.html" class="theme-btn btn-style-one">Contactame</a>
 					</div>
 				</div>
 			</div>
@@ -257,11 +276,10 @@
 			<div class="slide" style="background-image:url(images/background/back.jpg)">
 				<div class="container">
 					<div class="content">
-						<div class="title">Introduce with LawSight</div>
-						<h1>DEFENSOR PARTICULAR
-							EN MATERIA PENAL
+						<div class="title">Dr. Abdias Pedroza</div>
+						<h1>Protege tus intereses y asegura <span>una defensa implacable</span>
 							</h1>
-						<a href="#" class="theme-btn btn-style-one">Contact us today</a>
+						<a href="contact.html" class="theme-btn btn-style-one">Contactame</a>
 					</div>
 				</div>
 			</div>
@@ -376,8 +394,8 @@
 
 						<div class="question">  <a href="#">Llama para cualquier consulta:</a> <br><strong>449-510-29-40</strong></div>
 						<div class="signature">
-							<div class="signature-img"><img src="images/icons/signature.png" alt=""/></div>
-							<h5>Dr. Pablo Abdias Pedroza</h5>
+							<div class="signature-img"><img src="images/gallery/ruAbogado.jpg" alt="" style="width: 150px;"></div>
+							<h5>Dr. Abdias Pedroza Pedroza</h5>
 							<div class="designation">(Especialista en Derecho Penal)</div>
 						</div>
 
@@ -392,7 +410,7 @@
 							<div class="overlay-box">
 								<div class="overlay-inner">
 									<div class="content">
-										<h2>8 <span>years of experience</span></h2>
+										<h2>8 <span>años de experiencia</span></h2>
 									</div>
 								</div>
 							</div>
@@ -429,7 +447,7 @@
 								<div class="content">
 									<img src="images/icons/jail.png" alt="">
 									<h4><a href="services-detail.html">Defensa Penal</a></h4>
-									<a href="services-detail.html" class="theme-btn btn-style-one">consult now</a>
+									<!-- <a href="services-detail.html" class="theme-btn btn-style-one">consult now</a> -->
 								</div>
 							</div>
 						</div>
@@ -449,7 +467,7 @@
 								<div class="content">
 									<img src="images/icons/appeal.png" alt="">
 									<h4><a href="services-detail.html">Apelación</a></h4>
-									<a href="services-detail.html" class="theme-btn btn-style-one">consult now</a>
+									<!-- <a href="services-detail.html" class="theme-btn btn-style-one">consult now</a> -->
 								</div>
 							</div>
 						</div>
@@ -469,7 +487,7 @@
 								<div class="content">
 									<img src="images/icons/amparo.png" alt="" style="width: 49px;">
 									<h4><a href="services-detail.html">Amparo</a></h4>
-									<a href="services-detail.html" class="theme-btn btn-style-one">consult now</a>
+									<!-- <a href="services-detail.html" class="theme-btn btn-style-one">consult now</a> -->
 								</div>
 							</div>
 						</div>
@@ -489,7 +507,7 @@
 								<div class="content">
 									<span class="icon flaticon-plan"></span>
 									<h4><a href="services-detail.html">Derechos Humanos</a></h4>
-									<a href="services-detail.html" class="theme-btn btn-style-one">consult now</a>
+									<!-- <a href="services-detail.html" class="theme-btn btn-style-one">consult now</a> -->
 								</div>
 							</div>
 						</div>
@@ -509,7 +527,7 @@
 								<div class="content">
 									<span class="icon flaticon-internet"></span>
 									<h4><a href="services-detail.html">Extradición</a></h4>
-									<a href="services-detail.html" class="theme-btn btn-style-one">consult now</a>
+									<!-- <a href="services-detail.html" class="theme-btn btn-style-one">consult now</a> -->
 								</div>
 							</div>
 						</div>
@@ -530,7 +548,7 @@
 								<div class="content">
 									<img src="images/icons/crime.png" alt="" style="width: 61px;">
 									<h4><a href="services-detail.html">Concurrencia de Delitos</a></h4>
-									<a href="services-detail.html" class="theme-btn btn-style-one">consult now</a>
+									<!-- <a href="services-detail.html" class="theme-btn btn-style-one">consult now</a> -->
 								</div>
 							</div>
 						</div>
@@ -554,11 +572,11 @@
 										<!-- Lower Box -->
 										<div class="lower-box">
 											<div class="box-inner">
-												<div class="image">
+												<!-- <div class="image">
 													<img src="images/resource/author-2.jpg" alt="" />
-												</div>
+												</div> -->
 												<h3>Silvia Marmolejo castillo</h3>
-												<div class="designation">Envato Author</div>
+												<!-- <div class="designation">Envato Author</div> -->
 											</div>
 										</div>
 										
@@ -571,15 +589,15 @@
 								<div class="inner-box">
 									<div class="testimonial-content">
 										<span class="quote-icon flaticon-left-quote"></span>
-										<div class="text">Aenean tincidunt id mauris id auctor. Donec at ligula lacus. Nulla dignissim mi quis neque interdum, quis porta sem finibus. Them to gho ifndtp, no.</div>
+										<div class="text">SUPER RECOMENDADISIMO EXCELENTE TRABAJO Y DEDICACIÓN AL CASO DE MI HIJA, EN TRES MESES QUEDÓ RESUELTO LO QUE EN AÑOS NO HABIAMOS LOGRADO HACER</div>
 										<!-- Lower Box -->
 										<div class="lower-box">
 											<div class="box-inner">
 												<div class="image">
-													<img src="images/resource/author-2.jpg" alt="" />
+													<!-- <img src="images/resource/author-2.jpg" alt="" /> -->
 												</div>
-												<h3>Willem Eduard</h3>
-												<div class="designation">Envato Author</div>
+												<h3>Selene Urrutia</h3>
+												<!-- <div class="designation">Envato Author</div> -->
 											</div>
 										</div>
 										
@@ -612,9 +630,9 @@
 					</div>
 				</div>
 				
-				<div class="image">
+				<!-- <div class="image">
 					<img src="images/gallery/ruAbogado.jpg" alt="" />
-				</div>
+				</div> -->
 				
 			</div>
 		
@@ -632,7 +650,7 @@
 				<div class="section-title">
 					<div class="row clearfix">
 						<div class="column col-lg-6 col-md-12 col-sm-12">
-							<div class="title">Fun fact</div>
+							<div class="title">Portafolio</div>
 							<h3>Nos sentimos muy orgullosos de<br><span>nuestros grandes logros	</span></h3>
 						</div>
 						<div class="column col-lg-6 col-md-12 col-sm-12">
@@ -922,7 +940,7 @@
 				
 				
 				<!-- Portfolio Block -->
-				<div class="portfolio-block">
+				<!-- <div class="portfolio-block">
 					<div class="inner-box">
 						<div class="image">
 							<img src="images/gallery/1.jpg" alt="" />
@@ -939,9 +957,9 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				
-				<!-- Portfolio Block -->
+				<!-- Portfolio Block 
 				<div class="portfolio-block">
 					<div class="inner-box">
 						<div class="image">
@@ -959,7 +977,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 				
 				<!-- Portfolio Block -->
 				<div class="portfolio-block">
@@ -970,7 +988,7 @@
 								<div class="overlay-inner">
 									<div class="content">
 										<div class="title">Human Rights</div>
-										<h3>Marriage & Divorce</h3>
+										<h3>Extradiciones</h3>
 									</div>
 								</div>
 							</div>
@@ -981,7 +999,7 @@
 					</div>
 				</div>
 				
-				<!-- Portfolio Block -->
+				<!-- Portfolio Block 
 				<div class="portfolio-block">
 					<div class="inner-box">
 						<div class="image">
@@ -999,9 +1017,9 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 				
-				<!-- Portfolio Block -->
+				<!-- Portfolio Block 
 				<div class="portfolio-block">
 					<div class="inner-box">
 						<div class="image">
@@ -1019,17 +1037,17 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 				
 			</div>
 		</div>
 		
 	</section>
 	<!-- End Portfolio Section -->
-	
-	<!-- Form Section -->
-	<section class="form-section" style="background-image: url(images/background/books.jpg)">
-		<div class="container">
+	<br>
+	<!-- Form Section --> 
+	<section class="contact-info-section" style="background-image:url(images/background/books.jpg); height: 380px;">
+			<div class="container">
 			<!-- Upper Content -->
 			<div class="upper-content">
 				<div class="row clearfix">
@@ -1046,16 +1064,16 @@
 					</div>-->
 					
 					<!-- Info Column -->
-					<div class="info-column col-lg-7 col-md-12 col-sm-12">
+					<!-- <div class="info-column col-lg-7 col-md-12 col-sm-12">
 						<div class="inner-column">
 							<div class="row clearfix">
-								<!-- Column -->
+								 Column 
 								<div class="column col-lg-6 col-md-6 col-sm-12">
 									<ul class="list-style-two">
 										<li><span class="icon flaticon-placeholder-1"></span>4 G-ral. Traian Mosoiu Street, A Building, 2nd Entrance, Flat 30, Cluj-Napoca, Romania</li>
 									</ul>
 								</div>
-								<!-- Column -->
+								Column
 								<div class="column col-lg-6 col-md-6 col-sm-12">
 									<ul class="list-style-two">
 										<li><span class="icon flaticon-phone-call"></span>+012 (3456) 7890</li>
@@ -1064,7 +1082,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					
 				</div>
 			</div>
@@ -1104,11 +1122,11 @@
 	</section>
 	<!-- End Form Section -->
 	
-	<!-- News Section -->
+	<!-- News Section 
 	<section class="news-section">
 		<div class="container">
 		
-			<!-- Sec Title 
+			 Sec Title 
 			<div class="section-title">
 				<div class="clearfix">
 					<div class="pull-left">
@@ -1181,17 +1199,17 @@
 							<a href="blog-single.html" class="theme-btn btn-style-two">View more</a>
 						</div>
 					</div>
-				</div>-->
+				</div>
 				
 			</div>
 		</div>
 	</section>
-	<!-- End News Section -->
+	End News Section -->
 	
-	<!-- Subscribe Section -->
+	<!-- Subscribe Section
 	<section class="subscribe-section">
 		<div class="container">
-			<!--<div class="inner-container" style="background-image: url(images/background/3.jpg)">
+			<div class="inner-container" style="background-image: url(images/background/3.jpg)">
 				<h2>Subscribe Your Email for Newsletter <br> & Promotion</h2>
 				 Subscribe Form 
 				<div class="subscribe-form">
@@ -1202,10 +1220,10 @@
 						</div>
 					</form>
 				</div>
-			</div>-->
+			</div>
 		</div>
 	</section>
-	<!-- End Subscribe Section -->
+	End Subscribe Section -->
 	
 	<!--Main Footer-->
     <footer class="main-footer">
@@ -1298,32 +1316,8 @@
 							<li>Follow us: </li>
 							<li><a href="https://www.facebook.com/dr.abdiaspedroza"><img src="images/icons/fbIcon.svg" alt="Facebook"></a></li>
 							<li><a href="https://www.instagram.com/abdiaspedroza/"><img src="images/icons/igIcon.svg" alt="Instagram"></a></li>
+							<li><a href="https://www.tiktok.com/@abdiaspedroza"><img src="images/icons/ttIcon.svg" alt="Tiktok"></a></li>
 						</ul>
-						
-						<style>
-							.follow-us {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-}
-
-.follow-us li {
-    margin-right: 10px;
-}
-
-.follow-us img {
-    width: 24px; /* Ajusta el tamaño según sea necesario */
-    height: 24px;
-    filter: invert(100%); /* Hace que el ícono sea blanco sobre un fondo oscuro */
-    transition: filter 0.3s ease;
-}
-
-.follow-us img:hover {
-    filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(45deg) brightness(100%) contrast(100%);
-}
-
-						</style>
-
 					</div>
 					
 				</div>
@@ -1347,6 +1341,26 @@
 <script src="js/wow.js"></script>
 <script src="js/jquery-ui.js"></script>
 <script src="js/script.js"></script>
+
+<div id="google_translate_element" style="display:none;"></div>
+
+<script type="text/javascript">
+	function googleTranslateElementInit() {
+	  new google.translate.TranslateElement({pageLanguage: 'es'}, 'google_translate_element');
+	}
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+  <script type="text/javascript">
+    function translatePageToEnglish() {
+        var googleTranslateElement = document.querySelector('select.goog-te-combo');
+        if (googleTranslateElement) {
+            googleTranslateElement.value = 'en'; // Cambia a inglés
+            googleTranslateElement.dispatchEvent(new Event('change')); // Dispara el evento de cambio
+        }
+    }
+</script>
 
 
 </body>

@@ -1,0 +1,53 @@
+.follow-us {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea los íconos a la derecha */
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    padding: 0;
+    margin: 0;
+}
+
+.follow-us li:first-child {
+    margin-right: auto; /* Empuja el texto "Follow us:" hacia la izquierda */
+}
+
+.follow-us li {
+    margin-left: 10px; /* Ajusta el margen entre los íconos para mejor alineación */
+}
+
+.follow-us img {
+    width: 18px;
+    height: 18px;
+    filter: invert(100%);
+    transition: filter 0.3s ease;
+}
+
+.follow-us img:hover {
+    filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(350deg) brightness(90%) contrast(85%);
+}
+
+
+.follow-usG {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea los íconos a la derecha */
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    padding: 0;
+    margin: 0;
+}
+
+.follow-usG li:first-child {
+    margin-right: 10px; /* Empuja el texto "Follow us:" hacia la izquierda */
+}
+
+.follow-usG li {
+    margin-left: auto; /* Ajusta el margen entre los íconos para mejor alineación */
+}
+
+.follow-usG img {
+    width: 18px;
+    height: 18px;
+}
+
