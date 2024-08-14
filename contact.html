@@ -13,6 +13,34 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
+
+<style>
+	/* Estilos generales para la bandera */
+.flag-icon {
+    display: flex;
+    align-items: center;
+    position: absolute; /* Ajuste de posición */
+    right: 149px; /* Ajusta la posición según lo necesites */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.flag-icon img {
+    width: 45px; /* Tamaño ajustado de la bandera */
+    height: auto;
+    margin-left: 10px; /* Espacio a la izquierda */
+    margin-right: 10px; /* Espacio a la derecha */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la bandera */
+    transition: transform 0.3s ease;
+}
+
+.flag-icon img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+</style>
+
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
@@ -33,7 +61,7 @@
             	<div class="clearfix">
                 	
                 	<div class="pull-left logo-box">
-                    	<div class="logo"><a href="index.html"><img src="images/icons/LoGo.png" alt="" title="" style="width: 300px; margin-top: 6px;"></a></div>
+                    	<div class="logo"><a href="index.html"><img src="images/icons/LoGo.png" alt="" title="" style="width: 250px; margin-top: 10px; margin-bottom:auto;"></a></div>
                     </div>
                    	
                    	<div class="nav-outer clearfix">
@@ -89,29 +117,12 @@
 						</nav>
 						
 						<div class="outer-box">
-							
-							<!--Search Box
-							<div class="search-box-outer">
-								<div class="dropdown">
-									<button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
-									<ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu1">
-										<li class="panel-outer">
-											<div class="form-container">
-												<form method="post" action="blog.html">
-													<div class="form-group">
-														<input type="search" name="field-name" value="" placeholder="Search Here" required>
-														<button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
-													</div>
-												</form>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>-->
-							
-							<!--Nav Toggler-->
 							<div class="nav-toggler"><div class="nav-btn hidden-bar-opener"><span class="flaticon-menu"></span></div></div>
 						</div>
+
+						<a href="#" onclick="translatePageToEnglish();" class="flag-icon">
+							<img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="Translate to English" width="30px">
+						</a>
 						
 					</div>
                    
@@ -198,30 +209,32 @@
         <!-- Hidden Bar Wrapper -->
         <div class="hidden-bar-wrapper">
 			
-			<div class="inner-box">
-				<div class="logo">
-					<a href="index.html"><img src="images/icons/V=K.png" alt="" style="margin-bottom: 5px;"></a>
-				</div>
-				<div class="text">Me dedico a brindar una defensa eficaz y proteger tus derechos con un enfoque profesional y comprometido.</div>
-				<!-- List Style Four -->
-				<ul class="list-style-four">
-					<li><span class="icon flaticon-house"></span> <strong>Encuéntranos</strong>Plaza Kristal, Torre A, Pent House 4,
-						Int. 1, Col. San Luis, Aguascalientes,
-						México.</li>
-					<li><span class="icon flaticon-phone-call"></span> <strong>Llámanos!</strong>4495102940</li>
-					<br>
-					<li style="font-size: 12px;"><span class="icon flaticon-talk"></span><strong>Contacto</strong>contacto@abdiaspedroza.com</li>
-					</ul>
-					<div>
+				<div class="inner-box">
+					<div class="logo">
+						<a href="index.html"><img src="images/icons/V=K.png" alt="" style="margin-bottom: 5px;"></a>
+					</div>
+					<div class="text">Me dedico a brindar una defensa eficaz y proteger tus derechos con un enfoque profesional y comprometido.</div>
+					<!-- List Style Four -->
+					<ul class="list-style-four">
+						<li><span class="icon flaticon-house"></span> <strong>ATENCIÓN PERSONAL</strong>Plaza Kristal, Torre A, Pent House 4,
+							Int. 1, Col. San Luis, Aguascalientes,
+							México.</li>
+						<li><span class="icon flaticon-phone-call"></span> <strong>VÍA TELEFÓNICA</strong>+52 449 510 2940</li>
+						<br>
+						<li style="font-size: 12px;"><span class="icon flaticon-talk"></span><strong>EMAIL</strong>contacto@abdiaspedroza.com</li>
+						</ul>
+					<div class="lower-box">
+						<!-- Social Icons -->
 						<ul class="follow-usG">
-							<li>Síguenos: </li>
+							<li>SÍGUEME: </li>
 							<li><a href="https://www.facebook.com/dr.abdiaspedroza"><img src="images/icons/fbIconG.svg" alt="Facebook"></a></li>
 							<li><a href="https://www.instagram.com/abdiaspedroza/"><img src="images/icons/igIconG.svg" alt="Instagram"></a></li>
 							<li><a href="https://www.tiktok.com/@abdiaspedroza"><img src="images/icons/ttIconG.svg" alt="Tiktok"></a></li>
 						</ul>
+						<!--<a href="#" class="theme-btn buy-btn">Buy LawSight today!</a>-->
 					</div>
+				</div>
 			</div>
-		</div>
 		<!-- / Hidden Bar Wrapper -->
         
     </section>
@@ -379,9 +392,9 @@
 									<div class="logo">
 										<a href="index.html"><img src="images/icons/LoGo.png" alt="" style="width: 250px;"></a>
 									</div>
-									<div class="text">Contacto</div>
+									<div class="text"><h4>Contacto</h4></div>
 									<ul class="list-style-three">
-										<li><span class="icon fa fa-phone"></span>4495102940</li>
+										<li><span class="icon fa fa-phone"></span>+52 449 510 2940</li>
 										<li><span class="icon fa fa-envelope"></span>contacto@abdiaspedroza.com</li>
 										<li><span class="icon fa fa-home"></span>Plaza Kristal, Torre A, Pent House 4, <br> Int. 1, Col. San Luis, Aguascalientes, <br> México.</li>
 									</ul>
@@ -410,43 +423,18 @@
                     <div class="big-column col-lg-6 col-md-12 col-sm-12">
 						<div class="row clearfix">
 						
-                        	<!--Footer Column
+                        	<!--Footer Column-->
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget links-widget">
-									<h4>Support</h4>
+									<h4>Aviso de Privacidad</h4>
 									<ul class="list-link">
-										<li><a href="">Contact Us</a></li>
-										<li><a href="">Submit a Ticket</a></li>
-										<li><a href="">Visit Knowledge Base</a></li>
-										<li><a href="">Support System</a></li>
-										<li><a href="">Refund Policy</a></li>
-										<li><a href="">Professional Services</a></li>
+										<li><a href="services-detail.html">Conócelo</a></li>
 									</ul>
 								</div>
-							</div>-->
+							</div>
 							
 							<!--Footer Column-->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                <!--<div class="footer-widget gallery-widget">
-									<h4>Gallery</h4>
-									<div class="widget-content">
-										<div class="images-outer clearfix">
-											Image
-											<figure class="image-box"><a href="images/gallery/1.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-1.jpg" alt=""></a></figure>
-											Image Box
-											<figure class="image-box"><a href="images/gallery/2.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-2.jpg" alt=""></a></figure>
-											Image Box
-											<figure class="image-box"><a href="images/gallery/3.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-3.jpg" alt=""></a></figure>
-											Image Box
-											<figure class="image-box"><a href="images/gallery/4.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-4.jpg" alt=""></a></figure>
-											Image Box
-											<figure class="image-box"><a href="images/gallery/5.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-5.jpg" alt=""></a></figure>
-											Image Box
-											<figure class="image-box"><a href="images/gallery/6.jpg" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-gallery-thumb-6.jpg" alt=""></a></figure>
-										</div>
-									</div>
-								</div>-->
-							</div>
+                            
 							
 						</div>
 					</div>
@@ -454,6 +442,7 @@
 				</div>
 			</div>
 		</div>
+		
 		<!-- Footer Bottom -->
 		<div class="footer-bottom">
 			<div class="container">
@@ -461,15 +450,14 @@
 					
 					<!-- Copyright Column -->
 					<div class="copyright-column col-lg-6 col-md-6 col-sm-12">
-						<center>
-							<div class="copyright">2024 &copy; Dr. Abdias pedroza 2024 - Todos los derechos reservados. <br> Proudly Powered by: <img src="images/icons/versatio.png" alt="" style="width: 80px;"></div>
-						</center>
+						
+							<div class="copyright">2024 &copy; Dr. Abdias Pedroza 2024 - Todos los derechos reservados. <br> Proudly Powered by:  <img src="images/icons/versatio.png" alt="" style="width: 80px;"></div>
 					</div>
 					
 					<!-- Social Column -->
 					<div>
 						<ul class="follow-us">
-							<li>Follow us: </li>
+							<li>Sígueme: </li>
 							<li><a href="https://www.facebook.com/dr.abdiaspedroza"><img src="images/icons/fbIcon.svg" alt="Facebook"></a></li>
 							<li><a href="https://www.instagram.com/abdiaspedroza/"><img src="images/icons/igIcon.svg" alt="Instagram"></a></li>
 							<li><a href="https://www.tiktok.com/@abdiaspedroza"><img src="images/icons/ttIcon.svg" alt="Tiktok"></a></li>
@@ -498,6 +486,26 @@
 <script src="js/validate.js"></script>
 <script src="js/jquery-ui.js"></script>
 <script src="js/script.js"></script>
+
+
+
+<script type="text/javascript">
+	function googleTranslateElementInit() {
+	  new google.translate.TranslateElement({pageLanguage: 'es'}, 'google_translate_element');
+	}
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+  <script type="text/javascript">
+    function translatePageToEnglish() {
+        var googleTranslateElement = document.querySelector('select.goog-te-combo');
+        if (googleTranslateElement) {
+            googleTranslateElement.value = 'en'; // Cambia a inglés
+            googleTranslateElement.dispatchEvent(new Event('change')); // Dispara el evento de cambio
+        }
+    }
+</script>
 
 </body>
 </html>
