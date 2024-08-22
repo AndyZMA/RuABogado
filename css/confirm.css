@@ -60,9 +60,9 @@ p {
     background-color: #B58A58;
     border-radius: 50%;
     display: flex;
-    margin-left: 220px;
     justify-content: center;
     align-items: center;
+    margin: 0 auto; /* Centra el círculo horizontalmente */
 }
 
 .checkmark-circle span {
